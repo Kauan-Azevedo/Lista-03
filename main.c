@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-int array[10];
-int option;
+#include <time.h>
 
 void ex01()
 {
+    int array1[10], array2[5], array3[5], arraySoma[5];
     int option, chooser;
     /*
     1 - Construa um programa em C/C++ que tenha as seguintes opções de Menu:
@@ -30,27 +29,45 @@ no vetor e quantas vezes aparece.
         }
         else if (option == 1)
         {
-            printf("\nGerando valores aleatorios para o array...\n");
-            srand(getpid());
+            srand(time(NULL));
             for (int i = 0; i < 10; i++)
             {
-                array[i] = (rand() % 100) + 1;
+                array1[i] = (rand() % 100) + 1;
             };
 
             int somadorTemporario = 1;
             for (int a = 0; a < 3; a++)
             {
                 chooser = (rand() % 10) + 1;
-                printf("Array[%i] = %i\n", chooser, array[chooser]);
+                printf("Array[%i] = %i\n", chooser, array1[chooser]);
 
-                somadorTemporario = somadorTemporario * array[chooser];
+                somadorTemporario = somadorTemporario * array1[chooser];
             };
             printf("Multiplicacao dos elementos: %i\n\n", somadorTemporario);
             printf("OPERACAO CONCLUIDA.\nRETORNANDO...\n");
         }
         else if (option == 2)
         {
-            printf("opcao 2 selecionada");
+            printf("\nPrimeiro array[");
+            for (int i = 0; i < 5; i++)
+            {
+                array2[i] = (rand() % 5) + 1;
+                printf("%i ", array2[i]);
+            }
+            printf("]\nSegundo array[");
+            for (int i = 0; i < 5; i++)
+            {
+                array3[i] = (rand() % 5) + 1;
+                printf("%i ", array3[i]);
+            }
+            printf("]\nTerceiro array[");
+            for (int x = 0; x < 5; x++)
+            {
+                for (int y = 5; y >= 0; y--)
+                {
+                    
+                }
+            }
         }
         else if (option == 3)
         {
