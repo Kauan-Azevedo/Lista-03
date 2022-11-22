@@ -144,7 +144,7 @@ void ex02()
         }
         else if (option == 1)
         {
-            printf("\n");
+            printf("\nInserindo valores...\n\n");
             for (int i = 0; i < 5; i++)
             {
                 printf("VetorA[%i] = ", i);
@@ -180,19 +180,53 @@ void ex02()
             {
                 printf("%i ", arraySoma[i]);
             }
-            printf("]\n");
+            printf("]\n\n");
         }
         else if (option == 3)
         {
+            printf("\nSubtraindo vetores...\n");
+            for (int i = 0; i < 5; i++)
+            {
+                arraySub[i] = arrayA[i] - arrayB[i];
+            }
+            printf("\nVetorSubtracao = [");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arraySub[i]);
+            }
+            printf("]\n\n");
         }
         else if (option == 4)
         {
+            printf("\nMultiplicando vetores...\n");
+            for (int i = 0; i < 5; i++)
+            {
+                arrayMult[i] = arrayA[i] - arrayB[i];
+            }
+            printf("\nVetorMultiplicacao = [");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arrayMult[i]);
+            }
+            printf("]\n\n");
         }
         else if (option == 5)
         {
+            printf("\nDividindo vetores...\n");
+            for (int i = 0; i < 5; i++)
+            {
+                arrayDiv[i] = arrayA[i] - arrayB[i];
+            }
+            printf("\nVetorDivisao = [");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arrayDiv[i]);
+            }
+            printf("]\n\n");
         }
         else
         {
+            printf("\nVALOR INVALIDO!!!\n\n");
         }
 
     } while (option != 0);
