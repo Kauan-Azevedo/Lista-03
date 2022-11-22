@@ -133,11 +133,69 @@ void ex02()
     2.5 – Divisão dos elementos dos dois vetores gerando o VetorDivi[5];
     2.6 - Sair do Sistema
     */
-    int option, arrayA[5], arrayB[5];
+    int option, arrayA[5], arrayB[5], arraySoma[5], arraySub[5], arrayMult[5], arrayDiv[5];
     do
     {
-        printf("0 - Sair\n1 - ");
+        printf("0 - Sair\n1 - Preencher Vetores\n2 - Somar vetores em um novo\n3 - Subtrair vetores em um novo\n4 - Multiplicar vetores em um novo\n5 - Dividir vetores em um novo\nEscolha: ");
+        scanf("%i", &option);
+
+        if (option == 0)
+        {
+        }
+        else if (option == 1)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                printf("VetorA[%i] = ", i);
+                scanf("%i", &arrayA[i]);
+            };
+            printf("\n");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("VetorB[%i] = ", i);
+                scanf("%i", &arrayB[i]);
+            };
+            printf("\nVetorA = [ ");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arrayA[i]);
+            };
+            printf("]\nVetorB = [ ");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arrayB[i]);
+            };
+            printf("]\n\n");
+        }
+        else if (option == 2)
+        {
+            printf("\nSomando vetores...\n");
+            for (int i = 0; i < 5; i++)
+            {
+                arraySoma[i] = arrayA[i] + arrayB[i];
+            }
+            printf("\nVetorSoma = [");
+            for (int i = 0; i < 5; i++)
+            {
+                printf("%i ", arraySoma[i]);
+            }
+            printf("]\n");
+        }
+        else if (option == 3)
+        {
+        }
+        else if (option == 4)
+        {
+        }
+        else if (option == 5)
+        {
+        }
+        else
+        {
+        }
+
     } while (option != 0);
+    printf("\nAte mais!\n");
 }
 
 int main()
