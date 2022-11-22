@@ -144,6 +144,7 @@ void ex02()
         }
         else if (option == 1)
         {
+            printf("\n");
             for (int i = 0; i < 5; i++)
             {
                 printf("VetorA[%i] = ", i);
