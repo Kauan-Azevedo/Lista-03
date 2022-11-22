@@ -9,16 +9,16 @@ void ex01()
     int option, chooser;
     /*
     1 - Construa um programa em C/C++ que tenha as seguintes opções de Menu:
-1.1 - Leia um vetor de 10 posições com valores aleatórios 0-100 e na
-sequência selecione aleatoriamente três posições/índices deste vetor e
-apresente os seus valores e a multiplicação destes.
-1.2 - Leia dois vetores de 5 posições com valores inteiros cada e gere um
-terceiro com os resultados da soma dos valores sendo a lógica: soma o 1a
-elemento do 1o vetor com o 5o elemento do 2o vetor, 2a elemento do 1o vetor
-com o 4o elemento do 2o vetor, e assim sucessivamente.
-1.3 - Construa um vetor de 13 posições com valores caracteres aleatórios e na
-sequência pedir para o usuário digitar um caractere e localizar onde este está
-no vetor e quantas vezes aparece.
+    1.1 - Leia um vetor de 10 posições com valores aleatórios 0-100 e na
+        sequência selecione aleatoriamente três posições/índices deste vetor e
+        apresente os seus valores e a multiplicação destes.
+    1.2 - Leia dois vetores de 5 posições com valores inteiros cada e gere um
+        terceiro com os resultados da soma dos valores sendo a lógica: soma o 1a
+        elemento do 1o vetor com o 5o elemento do 2o vetor, 2a elemento do 1o vetor
+        com o 4o elemento do 2o vetor, e assim sucessivamente.
+    1.3 - Construa um vetor de 13 posições com valores caracteres aleatórios e na
+        sequência pedir para o usuário digitar um caractere e localizar onde este está
+        no vetor e quantas vezes aparece.
     */
     do
     {
@@ -120,9 +120,28 @@ no vetor e quantas vezes aparece.
         }
     } while (option != 0);
     printf("\nAte mais!\n\n");
+};
+
+void ex02()
+{
+    /*
+    2 - Desenvolver um programa que tenha um menu de:
+    2.1 - Entrada de dados dos vetores VetorA[5] e VetorB[5] com valores inteiros;
+    2.2 - Soma dos elementos dos dois vetores gerando o VetorSoma[5];
+    2.3 – Subtração dos elementos dos dois vetores gerando o VetorSoma[5];
+    2.4 - Multiplicação dos elementos dos dois vetores gerando o VetorMulti[5];
+    2.5 – Divisão dos elementos dos dois vetores gerando o VetorDivi[5];
+    2.6 - Sair do Sistema
+    */
+    int option, arrayA[5], arrayB[5];
+    do
+    {
+        printf("0 - Sair\n1 - ");
+    } while (option != 0);
 }
 
 int main()
 {
-    ex01();
+    // ex01();
+    ex02();
 };
